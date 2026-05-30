@@ -34,7 +34,7 @@ public class EmailService {
 
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(email);
-        message.setSubject("[앱 이름] 이메일 인증 코드");
+        message.setSubject("[KidsMeal Pro] 이메일 인증 코드");
         message.setText("인증 코드: " + code + "\n\n5분 안에 입력해주세요.");
         mailSender.send(message);
     }
